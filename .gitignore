@@ -1,9 +1,9 @@
 *.DS_Store
-*/build**
-*/.vscode/*
-*/results
+build/
+/.vscode/
+results/
 *.pyc
-*geometryFiles/histone*
-*geometryFiles/sugar*
-*geometryFiles/pos*
-*geometryFiles/*.txt
+/DNA_damage/geometryFiles/histone*
+/DNA_damage/geometryFiles/sugar*
+/DNA_damage/geometryFiles/pos*
+/DNA_damage/geometryFiles/*.txt
