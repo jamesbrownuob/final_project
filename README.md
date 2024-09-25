@@ -18,9 +18,11 @@ More details on how to setup, compile and run each are in the readme files: [DaR
 ## Example of how to run
 This is an example of how to run both parts of the simulation. After both components have been compiled (assumed to be in a folder called 'build'), and the DNA geometry has been created by running (./DNA_damage/geometryFiles/writeContinuousGeometry.py).
 
+First make a folder in the same directory as this readme called "results"
+
 ### DaRT simulation
 
-Create the dart simulation input file (dart.in)
+Create the dart simulation input file (dart.in) and save in results
 ```
 /run/verbose 1
 /control/verbose 2
@@ -58,7 +60,7 @@ This will take longer than the last simulation and should create a new root file
 Run the DNA damage clustering algorithm, for the first ring (specified using --copy) in the DaRT simulation, again from the [results file](results). The example below will included all particles in the decay chain in the DNA damage calculation.
 
 ```
-conda activate clustering
+source ../DNA_damage/Clustering/build/clustering/bin/activate
 
 python ../DNA_damage/Clustering/run.py --filename example_simulation_DNA.root --output example_simulation_DNA_copy0.csv --sugar ../DNA_damage/geometryFiles/sugarPos_n2_300nm_H75nm_R11nm_33hist_50deg.bin --continuous 1 --copy 0 --simulationType=decay --part1_particleSource "[alphaRa224,alphaRn220,alphaPo216,alphaBi212,alphaPo212,e-Rn220,e-Po216,e-Pb212,e-Bi212,e-Tl208,e-Po212,gammaRn220,gammaPo216,gammaPb212,gammaBi212,gammaTl208,gammaPo212]"
  

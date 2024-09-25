@@ -40,16 +40,16 @@ Inputs to the simulation are:
 2) Either a Geant4 input file describing the particle source or a pre-calculated phase space file for example from the [photon simulation](#photon-simulation)
 
  ### Initial Setup on Blue Pebble
- * cd to RBE/simulation
+ * cd to DNA_damage/simulation
  * make a build directory and cd to it
  * run the following to compile:
 ```
  
-module add tools/cmake/3.17.0.gcc-4.8.5 
-module add lang/gcc/9.1.0
- module add apps/geant/4.11.1
+module add cmake/3.27.9
+module add gcc/12.3.0
+module add geant4/11.1.3
 
-cmake -DCMAKE_C_COMPILER=/sw/lang/gcc-9.1.0/bin/gcc -DCMAKE_CXX_COMPILER=/sw/lang/gcc-9.1.0/bin/g++ ..
+cmake -DCMAKE_C_COMPILER=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc -DCMAKE_CXX_COMPILER=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/g++ ..
 make -j8
 ```
 
@@ -133,28 +133,18 @@ The full clustering process can be run from REF run.py, the following arguments 
  ### Initial Setup on Blue Pebble
 - on blue pebble change directory to Clustering and make a build directory. Change to the build directory and then run:
     ```
-    module load apps/root/6.26.00
-    module load lang/python/miniconda/3.9.7
-    module add tools/cmake/3.17.0.gcc-4.8.5 
-    module load lang/gcc/7.5.0
-    conda create --name clustering -c conda-forge scipy numpy pybind11 matplotlib uproot
-    conda activate clustering
-    pip install fractaldna, myavi
+    module add languages/python/3.12.3
+    module add cmake/3.27.9
+    module add gcc/12.3.0
+
+    python3 -m venv clustering
+    source clustering/bin/activate
+
+    python3 -m pip install -r ../requirements.txt
+
     ```
 
-- if it is the first time you use conda on blue pebble run:
-    ```
-    conda init bash
-    ```
-- close the shell and reopen the shell if directed (modules above will need to be re-loaded)
-- change CMakeLists.txt pybind11_DIR and header directories to your environment location. e.g. change USERNAME in the following
-    ```
-    include_directories(/user/home/USERNAME/.conda/envs/clustering/lib/python3.6/site-packages/pybind11/include/pybind11/)
-
-    set(pybind11_DIR /user/home/USERNAME/.conda/envs/clustering/share/cmake/pybind11)
-    ```
-
-- change to the build direcrory to build pyClustering.cc:
+- from the build direcrory build pyClustering.cc:
     ```
     cmake ..
     make

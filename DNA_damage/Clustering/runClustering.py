@@ -1,3 +1,4 @@
+from build.clustering import clustering
 import numpy as np
 from scipy.spatial import cKDTree
 import os
@@ -7,12 +8,9 @@ import uproot
 import uproot.models.TTree as TTreeType
 from typing import Union, Tuple, List
 
-# To import clustering from build folder
+
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 builddir = currentdir+r"/build"
-sys.path.insert(0, builddir) 
-
-from clustering import clustering
 
 def loadSugarFile(sugarPosFilename: str) -> Tuple[cKDTree, cKDTree]:
     """Function to read in sugar positions file

@@ -35,6 +35,7 @@
 #include "globals.hh"
 #include "G4ThreeVector.hh"
 #include <map>
+#include <vector>
 class EventAction : public G4UserEventAction
 {
 public:
