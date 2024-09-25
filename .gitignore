@@ -1,0 +1,9 @@
+*.DS_Store
+*/build**
+*/.vscode/*
+*/results
+*.pyc
+*geometryFiles/histone*
+*geometryFiles/sugar*
+*geometryFiles/pos*
+*geometryFiles/*.txt
