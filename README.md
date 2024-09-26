@@ -1,4 +1,4 @@
-# DaRT + RBE Simulation
+# DaRT + DNA damage Simulation
 
 Simulate a DaRT seed and the associated DNA damage in a two part simulation.
 
