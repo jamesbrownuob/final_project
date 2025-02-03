@@ -1,0 +1,2 @@
+/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ar qc libgit_version.a CMakeFiles/git_version.dir/generated/git_version.cpp.o
+/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ranlib libgit_version.a

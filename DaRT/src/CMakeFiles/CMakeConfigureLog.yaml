@@ -1,0 +1,585 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 4.18.0-513.18.1.el8_9.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/3.27.9/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/3.27.9/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-yih4Tl"
+      binary: "/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-yih4Tl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-yih4Tl'
+        
+        Run Build Command(s): /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_388a5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_388a5.dir/build.make CMakeFiles/cmTC_388a5.dir/build
+        gmake[1]: Entering directory '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-yih4Tl'
+        Building C object CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc   -v -o CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o -c /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Reading specs from /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs
+        COLLECT_GCC=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /system/tmp/spackuser/spack-stage/spack-stage-gcc-12.3.0-skncg5nrqhczfl5wmx2yx5gmxskdvmcr/spack-src/configure --prefix=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran,go,obj-c++,objc --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/include --with-zstd-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib --with-gnu-ld --with-ld=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld --with-gnu-as --with-as=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as --enable-bootstrap --with-mpfr-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/include --with-mpfr-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib --with-gmp-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/include --with-gmp-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib --with-mpc-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/include --with-mpc-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib --without-isl --with-gsl-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/include --with-gsl-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib --with-stage1-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.3.0 (Spack GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_388a5.dir/'
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/cc1 -quiet -v /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_388a5.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccBvzT3D.s
+        GNU C17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include
+         /usr/local/include
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed
+         /usr/include
+        End of search list.
+        GNU C17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: fc61ab4db007be093f0121c5a3aeb8e9
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_388a5.dir/'
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as -v --64 -o CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o /tmp/ccBvzT3D.s
+        GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_388a5
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E cmake_link_script CMakeFiles/cmTC_388a5.dir/link.txt --verbose=1
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc  -v CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o -o cmTC_388a5 
+        Reading specs from /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs
+        COLLECT_GCC=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc
+        COLLECT_LTO_WRAPPER=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /system/tmp/spackuser/spack-stage/spack-stage-gcc-12.3.0-skncg5nrqhczfl5wmx2yx5gmxskdvmcr/spack-src/configure --prefix=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran,go,obj-c++,objc --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/include --with-zstd-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib --with-gnu-ld --with-ld=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld --with-gnu-as --with-as=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as --enable-bootstrap --with-mpfr-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/include --with-mpfr-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib --with-gmp-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/include --with-gmp-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib --with-mpc-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/include --with-mpc-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib --without-isl --with-gsl-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/include --with-gsl-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib --with-stage1-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.3.0 (Spack GCC) 
+        COMPILER_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_388a5' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'cmTC_388a5.'
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2 -plugin /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so -plugin-opt=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxop8tH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_388a5 /lib/../lib64/crt1.o /lib/../lib64/crti.o /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0 -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../.. -rpath /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_388a5' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'cmTC_388a5.'
+        gmake[1]: Leaving directory '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-yih4Tl'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+          add: [/usr/local/include]
+          add: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include]
+          add: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include]
+        collapse include dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include;/usr/local/include;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-yih4Tl']
+        ignore line: []
+        ignore line: [Run Build Command(s): /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_388a5/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_388a5.dir/build.make CMakeFiles/cmTC_388a5.dir/build]
+        ignore line: [gmake[1]: Entering directory '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-yih4Tl']
+        ignore line: [Building C object CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc   -v -o CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o -c /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Reading specs from /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs]
+        ignore line: [COLLECT_GCC=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /system/tmp/spackuser/spack-stage/spack-stage-gcc-12.3.0-skncg5nrqhczfl5wmx2yx5gmxskdvmcr/spack-src/configure --prefix=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran,go,obj-c++,objc --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/include --with-zstd-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib --with-gnu-ld --with-ld=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld --with-gnu-as --with-as=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as --enable-bootstrap --with-mpfr-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/include --with-mpfr-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib --with-gmp-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/include --with-gmp-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib --with-mpc-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/include --with-mpc-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib --without-isl --with-gsl-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/include --with-gsl-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib --with-stage1-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.3.0 (Spack GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_388a5.dir/']
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/cc1 -quiet -v /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_388a5.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccBvzT3D.s]
+        ignore line: [GNU C17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include]
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: fc61ab4db007be093f0121c5a3aeb8e9]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_388a5.dir/']
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as -v --64 -o CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o /tmp/ccBvzT3D.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_388a5]
+        ignore line: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E cmake_link_script CMakeFiles/cmTC_388a5.dir/link.txt --verbose=1]
+        ignore line: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc  -v CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o -o cmTC_388a5 ]
+        ignore line: [Reading specs from /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs]
+        ignore line: [COLLECT_GCC=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /system/tmp/spackuser/spack-stage/spack-stage-gcc-12.3.0-skncg5nrqhczfl5wmx2yx5gmxskdvmcr/spack-src/configure --prefix=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran,go,obj-c++,objc --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/include --with-zstd-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib --with-gnu-ld --with-ld=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld --with-gnu-as --with-as=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as --enable-bootstrap --with-mpfr-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/include --with-mpfr-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib --with-gmp-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/include --with-gmp-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib --with-mpc-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/include --with-mpc-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib --without-isl --with-gsl-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/include --with-gsl-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib --with-stage1-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.3.0 (Spack GCC) ]
+        ignore line: [COMPILER_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_388a5' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'cmTC_388a5.']
+        link line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2 -plugin /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so -plugin-opt=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxop8tH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_388a5 /lib/../lib64/crt1.o /lib/../lib64/crti.o /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0 -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../.. -rpath /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccxop8tH.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_388a5] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o] ==> obj [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o]
+          arg [-L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin] ==> dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin]
+          arg [-L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0] ==> dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0]
+          arg [-L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64] ==> dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..] ==> dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..]
+          arg [-rpath] ==> ignore
+          arg [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64] ==> ignore
+          arg [CMakeFiles/cmTC_388a5.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o] ==> obj [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin]
+        collapse library dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0]
+        collapse library dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64;/lib64;/usr/lib64;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-kZ2MRJ"
+      binary: "/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-kZ2MRJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-kZ2MRJ'
+        
+        Run Build Command(s): /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ce692/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ce692.dir/build.make CMakeFiles/cmTC_ce692.dir/build
+        gmake[1]: Entering directory '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-kZ2MRJ'
+        Building CXX object CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/g++   -v -o CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o -c /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs
+        COLLECT_GCC=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/g++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /system/tmp/spackuser/spack-stage/spack-stage-gcc-12.3.0-skncg5nrqhczfl5wmx2yx5gmxskdvmcr/spack-src/configure --prefix=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran,go,obj-c++,objc --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/include --with-zstd-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib --with-gnu-ld --with-ld=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld --with-gnu-as --with-as=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as --enable-bootstrap --with-mpfr-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/include --with-mpfr-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib --with-gmp-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/include --with-gmp-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib --with-mpc-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/include --with-mpc-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib --without-isl --with-gsl-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/include --with-gsl-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib --with-stage1-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.3.0 (Spack GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_ce692.dir/'
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/cc1plus -quiet -v -D_GNU_SOURCE /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ce692.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccY8hlYo.s
+        GNU C++17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/x86_64-pc-linux-gnu
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/backward
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include
+         /usr/local/include
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed
+         /usr/include
+        End of search list.
+        GNU C++17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 5bcb83512355b05f2481bd2f13357a67
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_ce692.dir/'
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as -v --64 -o CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccY8hlYo.s
+        GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_ce692
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce692.dir/link.txt --verbose=1
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/g++  -v CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ce692 
+        Reading specs from /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs
+        COLLECT_GCC=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/g++
+        COLLECT_LTO_WRAPPER=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /system/tmp/spackuser/spack-stage/spack-stage-gcc-12.3.0-skncg5nrqhczfl5wmx2yx5gmxskdvmcr/spack-src/configure --prefix=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran,go,obj-c++,objc --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/include --with-zstd-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib --with-gnu-ld --with-ld=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld --with-gnu-as --with-as=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as --enable-bootstrap --with-mpfr-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/include --with-mpfr-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib --with-gmp-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/include --with-gmp-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib --with-mpc-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/include --with-mpc-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib --without-isl --with-gsl-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/include --with-gsl-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib --with-stage1-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.3.0 (Spack GCC) 
+        COMPILER_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ce692' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'cmTC_ce692.'
+         /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2 -plugin /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so -plugin-opt=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuTq90t.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ce692 /lib/../lib64/crt1.o /lib/../lib64/crti.o /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0 -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../.. -rpath /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ce692' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'cmTC_ce692.'
+        gmake[1]: Leaving directory '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-kZ2MRJ'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0]
+          add: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/x86_64-pc-linux-gnu]
+          add: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/backward]
+          add: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+          add: [/usr/local/include]
+          add: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include]
+          add: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include/c++/12.3.0]
+        collapse include dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/x86_64-pc-linux-gnu] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include/c++/12.3.0/x86_64-pc-linux-gnu]
+        collapse include dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/backward] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include/c++/12.3.0/backward]
+        collapse include dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include]
+        collapse include dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include/c++/12.3.0;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include/c++/12.3.0/x86_64-pc-linux-gnu;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include/c++/12.3.0/backward;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include;/usr/local/include;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-kZ2MRJ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ce692/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_ce692.dir/build.make CMakeFiles/cmTC_ce692.dir/build]
+        ignore line: [gmake[1]: Entering directory '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-kZ2MRJ']
+        ignore line: [Building CXX object CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/g++   -v -o CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o -c /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs]
+        ignore line: [COLLECT_GCC=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/g++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /system/tmp/spackuser/spack-stage/spack-stage-gcc-12.3.0-skncg5nrqhczfl5wmx2yx5gmxskdvmcr/spack-src/configure --prefix=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran,go,obj-c++,objc --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/include --with-zstd-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib --with-gnu-ld --with-ld=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld --with-gnu-as --with-as=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as --enable-bootstrap --with-mpfr-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/include --with-mpfr-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib --with-gmp-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/include --with-gmp-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib --with-mpc-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/include --with-mpc-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib --without-isl --with-gsl-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/include --with-gsl-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib --with-stage1-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.3.0 (Spack GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_ce692.dir/']
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/cc1plus -quiet -v -D_GNU_SOURCE /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ce692.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccY8hlYo.s]
+        ignore line: [GNU C++17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0]
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/x86_64-pc-linux-gnu]
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/backward]
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/include]
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 5bcb83512355b05f2481bd2f13357a67]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_ce692.dir/']
+        ignore line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as -v --64 -o CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccY8hlYo.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_ce692]
+        ignore line: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce692.dir/link.txt --verbose=1]
+        ignore line: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/g++  -v CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ce692 ]
+        ignore line: [Reading specs from /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs]
+        ignore line: [COLLECT_GCC=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /system/tmp/spackuser/spack-stage/spack-stage-gcc-12.3.0-skncg5nrqhczfl5wmx2yx5gmxskdvmcr/spack-src/configure --prefix=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran,go,obj-c++,objc --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/include --with-zstd-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib --with-gnu-ld --with-ld=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld --with-gnu-as --with-as=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/as --enable-bootstrap --with-mpfr-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/include --with-mpfr-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib --with-gmp-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/include --with-gmp-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib --with-mpc-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/include --with-mpc-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib --without-isl --with-gsl-include=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/include --with-gsl-lib=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib --with-stage1-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-runtime-12.3.0-2v5d/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gmp-6.3.0-5fl2/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gsl-2.7.1-2lr5/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpc-1.3.1-tgg4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/mpfr-4.2.1-tcij/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zlib-ng-2.1.6-reu4/lib -Wl,-rpath,/software/spack/linux-rocky8-broadwell/gcc-12.3.0/zstd-1.5.6-23mh/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.3.0 (Spack GCC) ]
+        ignore line: [COMPILER_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ce692' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-B' '/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin' '-dumpdir' 'cmTC_ce692.']
+        link line: [ /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2 -plugin /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so -plugin-opt=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuTq90t.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ce692 /lib/../lib64/crt1.o /lib/../lib64/crti.o /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0 -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../.. -rpath /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64 CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccuTq90t.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_ce692] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o] ==> obj [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o]
+          arg [-L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin] ==> dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin]
+          arg [-L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0] ==> dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0]
+          arg [-L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64] ==> dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..] ==> dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..]
+          arg [-rpath] ==> ignore
+          arg [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64] ==> ignore
+          arg [CMakeFiles/cmTC_ce692.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o] ==> obj [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin]
+        collapse library dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0]
+        collapse library dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..] ==> [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib/gcc/x86_64-pc-linux-gnu/12.3.0;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64;/lib64;/usr/lib64;/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/geant4-11.1.3-wdly/lib64/cmake/Geant4/PTL/PTLConfig.cmake:56 (find_dependency)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/geant4-11.1.3-wdly/lib64/cmake/Geant4/Geant4Config.cmake:292 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-J7ixa5"
+      binary: "/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-J7ixa5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/geant4-11.1.3-wdly/lib64/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-J7ixa5'
+        
+        Run Build Command(s): /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_126bf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_126bf.dir/build.make CMakeFiles/cmTC_126bf.dir/build
+        gmake[1]: Entering directory '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-J7ixa5'
+        Building C object CMakeFiles/cmTC_126bf.dir/src.c.o
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_126bf.dir/src.c.o -c /user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-J7ixa5/src.c
+        Linking C executable cmTC_126bf
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E cmake_link_script CMakeFiles/cmTC_126bf.dir/link.txt --verbose=1
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc CMakeFiles/cmTC_126bf.dir/src.c.o -o cmTC_126bf 
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld: CMakeFiles/cmTC_126bf.dir/src.c.o: in function `main':
+        src.c:(.text+0x2d): undefined reference to `pthread_create'
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld: src.c:(.text+0x39): undefined reference to `pthread_detach'
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld: src.c:(.text+0x45): undefined reference to `pthread_cancel'
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/binutils-2.42-vpuc/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_join'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_126bf.dir/build.make:99: cmTC_126bf] Error 1
+        gmake[1]: Leaving directory '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-J7ixa5'
+        gmake: *** [Makefile:127: cmTC_126bf/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/FindThreads.cmake:136 (try_compile)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/FindThreads.cmake:169 (_threads_check_flag_pthread)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/geant4-11.1.3-wdly/lib64/cmake/Geant4/PTL/PTLConfig.cmake:56 (find_dependency)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/geant4-11.1.3-wdly/lib64/cmake/Geant4/Geant4Config.cmake:292 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Check if compiler accepts -pthread"
+    directories:
+      source: "/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-BtaQT9"
+      binary: "/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-BtaQT9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/software/spack/linux-rocky8-broadwell/gcc-12.3.0/geant4-11.1.3-wdly/lib64/cmake/Geant4/Modules"
+    buildResult:
+      variable: "THREADS_HAVE_PTHREAD_ARG"
+      cached: true
+      stdout: |
+        Change Dir: '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-BtaQT9'
+        
+        Run Build Command(s): /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_61b69/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_61b69.dir/build.make CMakeFiles/cmTC_61b69.dir/build
+        gmake[1]: Entering directory '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-BtaQT9'
+        Building C object CMakeFiles/cmTC_61b69.dir/CheckForPthreads.c.o
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc    -o CMakeFiles/cmTC_61b69.dir/CheckForPthreads.c.o -c /user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-BtaQT9/CheckForPthreads.c
+        Linking C executable cmTC_61b69
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/cmake-3.27.9-s6cv/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61b69.dir/link.txt --verbose=1
+        /software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/bin/gcc CMakeFiles/cmTC_61b69.dir/CheckForPthreads.c.o -o cmTC_61b69  -pthread 
+        gmake[1]: Leaving directory '/user/home/hm20670/DaRT_RBE/DaRT/src/CMakeFiles/CMakeScratch/TryCompile-BtaQT9'
+        
+      exitCode: 0
+...
