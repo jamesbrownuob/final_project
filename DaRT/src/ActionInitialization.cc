@@ -26,7 +26,7 @@
 //
 #include "ActionInitialization.hh"
 #include "G4SystemOfUnits.hh"
-#include "xy_SteppingAction.hh"
+#include "SteppingAction.hh"
 #include "RunAction.hh"
 #include "DetectorConstruction.hh"
 #include "G4RunManager.hh"
