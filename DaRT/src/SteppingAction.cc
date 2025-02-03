@@ -22,9 +22,11 @@
 // * use  in  resulting  scientific  publications,  and indicate your *
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
-//
-//
-#include "xy_SteppingAction.hh"
+//////////////////////////////////////////////////////////////////////////
+// THIS .CC SteppingAction function has three additional outputs (x, y, z) 
+// for the position of the input particle. 
+//////////////////////////////////////////////////////////////////////////
+#include "SteppingAction.hh"
 #include "G4AnalysisManager.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4Track.hh"
