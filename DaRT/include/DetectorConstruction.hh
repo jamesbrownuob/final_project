@@ -22,32 +22,39 @@
 // * use  in  resulting  scientific  publications,  and indicate your *
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
-//
-//
-/// \file PrimaryGeneratorAction.hh
-/// \brief Definition of the PrimaryGeneratorAction class
 
 #pragma once
-#include "G4VUserPrimaryGeneratorAction.hh"
+#include "G4VUserDetectorConstruction.hh"
 #include <memory>
-#include "G4ThreeVector.hh"
+#include "G4RotationMatrix.hh"
+#include "DetectorMessenger.hh"
 
-#include "G4ParticleGun.hh"
+class G4VPhysicalVolume;
+class DetectorMessenger;
 
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo....
 
-class G4GeneralParticleSource;
-
-class PrimaryGeneratorAction
-    : public G4VUserPrimaryGeneratorAction
+class DetectorConstruction
+    : public G4VUserDetectorConstruction
 {
 public:
-    PrimaryGeneratorAction();
-    ~PrimaryGeneratorAction() override;
-    void GeneratePrimaries(G4Event *event) override;
+    DetectorConstruction();
+    ~DetectorConstruction() override;
+    G4VPhysicalVolume *Construct() override;
+
+    void SetCells(G4double min, G4double max, G4int Nrings);
+    void SetMin(G4double min);
+    void SetMax(G4double max);
+    void SetNrings(G4int N);
+    void SetNperRing(G4int n);
+
+    DetectorMessenger* fDetectorMessenger;
+    std::vector<G4double> R;
 
 private:
-    G4ParticleGun*  fParticleGun;  
-    G4int numParticles{0};
-
+    G4double Rmin{0};
+    G4double Rmax{0};
+    G4int Nrings{0};
+    G4int NperRing{0};
 
 };
