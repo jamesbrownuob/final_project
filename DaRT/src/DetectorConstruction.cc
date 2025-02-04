@@ -27,7 +27,8 @@
 /// \file DetectorConstruction.cc
 /// \brief Implementation of the DetectorConstruction class
 
-#include "DetectorConstruction.hh" // For vascular transport model
+#include "DetectorConstruction.hh"
+
 #include "globals.hh"
 #include "G4LogicalVolume.hh"
 #include "G4Box.hh"
@@ -52,8 +53,6 @@
 
 #include "RunAction.hh"
 
-#include "G4RandomTools.hh" // Include the random tools header
-
 using namespace G4DNAPARSER;
 
 #define countof(x) (sizeof(x) / sizeof(x[0]))
@@ -69,12 +68,8 @@ static G4VisAttributes visGrey(true, G4Colour(0.839216, 0.839216, 0.839216));
 static G4VisAttributes invisGrey(false, G4Colour(0.839216, 0.839216, 0.839216));
 static G4VisAttributes visRed(true, G4Colour(0, 0, 1));
 
-// Define constants
-const int numTubes = 20;
-const G4double tubeRadius = 5.0 * micrometer; // 10 micrometers in diameter
-const G4double tubeHeight = 3.0 * mm;
-const G4double seedRadius = 0.15 * mm;
-const G4double halfWaterBoxLength = 15.0 * mm; // Half the size of the water box
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 DetectorConstruction::DetectorConstruction() : G4VUserDetectorConstruction()
 {
@@ -83,12 +78,17 @@ DetectorConstruction::DetectorConstruction() : G4VUserDetectorConstruction()
   fDetectorMessenger = new DetectorMessenger(this);
 }
 
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
 DetectorConstruction::~DetectorConstruction()
 {
 }
 
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
 G4VPhysicalVolume *DetectorConstruction::Construct()
 {
+
   /***************************************************************************/
   //                               World
   /***************************************************************************/
@@ -103,9 +103,11 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
 
   G4Box *solidWorld = new G4Box("world", 100 * mm, 100 * mm, 100 * mm);
 
-  G4Box *solidWater = new G4Box("water", halfWaterBoxLength, halfWaterBoxLength, halfWaterBoxLength); 
+  G4Box *solidWater = new G4Box("water", 15 * mm, 15 * mm, 15 * mm); 
 
-  G4Tubs *solidSeed = new G4Tubs("seed", 0., seedRadius, 3 * mm, 0, 360 * degree);
+  G4Tubs *solidSeed = new G4Tubs("seed", 0., 0.15 * mm, 3 * mm, 0, 360 * degree);
+  // G4Box *solidCell = new G4Box("cell", nucleusSize/2+ margin, nucleusSize/2 + margin, nucleusSize/2+ margin);
+  // G4Box *solidNucleus = new G4Box("nucleus", nucleusSize/2, nucleusSize/2, nucleusSize/2);
 
   G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld,
                                                     air,
@@ -153,6 +155,10 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
 
   G4double maxStep = 0.01*nucleusSize;
   auto fStepLimit = new G4UserLimits(maxStep);
+  // logicWorld->SetUserLimits(fStepLimit);
+  // logicWater->SetUserLimits(fStepLimit);
+  // logicSeed->SetUserLimits(fStepLimit);
+
 
   SetCells(Rmin, Rmax, Nrings);
   G4int numberRadialDivisions = NperRing;
@@ -177,98 +183,38 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
                                                      0);
       }
     
-  // Create 20 cylindrical tubes with random paths through the box of water
-  G4Material *bloodMaterial = man->FindOrBuildMaterial("G4_WATER"); // Example material for blood
-
-  for (int i = 0; i < numTubes; ++i)
-  {
-      // Generate random start and end points on the faces of the cube
-      G4ThreeVector startPoint, endPoint;
-      do {
-          // Randomly select a face for the start point
-          int startFace = static_cast<int>(G4UniformRand() * 6);
-          switch (startFace) {
-              case 0: startPoint = G4ThreeVector(-halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength); break;
-              case 1: startPoint = G4ThreeVector(halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength); break;
-              case 2: startPoint = G4ThreeVector(G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, -halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength); break;
-              case 3: startPoint = G4ThreeVector(G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength); break;
-              case 4: startPoint = G4ThreeVector(G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, -halfWaterBoxLength); break;
-              case 5: startPoint = G4ThreeVector(G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, halfWaterBoxLength); break;
-          }
-
-          // Randomly select a face for the end point
-          int endFace = static_cast<int>(G4UniformRand() * 6);
-          switch (endFace) {
-              case 0: endPoint = G4ThreeVector(-halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength); break;
-              case 1: endPoint = G4ThreeVector(halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength); break;
-              case 2: endPoint = G4ThreeVector(G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, -halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength); break;
-              case 3: endPoint = G4ThreeVector(G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength); break;
-              case 4: endPoint = G4ThreeVector(G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, -halfWaterBoxLength); break;
-              case 5: endPoint = G4ThreeVector(G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, G4UniformRand() * 2 * halfWaterBoxLength - halfWaterBoxLength, halfWaterBoxLength); break;
-          }
-      } while (startPoint.perp() <= seedRadius || endPoint.perp() <= seedRadius);
-
-      // Calculate the direction and length of the tube
-      G4ThreeVector direction = endPoint - startPoint;
-      G4double length = direction.mag();
-      G4ThreeVector midPoint = 0.5 * (startPoint + endPoint);
-      direction /= length; // Normalize the direction
-
-      // Create the cylindrical tube
-      G4Tubs *solidTube = new G4Tubs("Tube", 0, tubeRadius, length / 2, 0, 360 * degree);
-
-      G4LogicalVolume *logicTube = new G4LogicalVolume(solidTube, bloodMaterial, "Tube");
-
-      // Place the tube at the mid-point with the calculated rotation
-      G4RotationMatrix* rotMatrix = new G4RotationMatrix();
-      rotMatrix->rotateX(atan2(direction.y(), direction.z()));
-      rotMatrix->rotateY(atan2(direction.z(), direction.x()));
-      rotMatrix->rotateZ(atan2(direction.y(), direction.x()));
-
-      new G4PVPlacement(rotMatrix, midPoint, logicTube, "Tube", logicWater, false, i, false);
-  }
 
   logicWorld->SetVisAttributes(&invisGrey);
   logicWater->SetVisAttributes(&invisGrey);
   logicSeed->SetVisAttributes(&visGrey);
 
+
   return physiWorld;
 }
-
 void DetectorConstruction::SetMin(G4double min)
 {
   Rmin = min;
   RunAction *myRunAction = (RunAction *)(G4RunManager::GetRunManager()->GetUserRunAction());
-  if (myRunAction) { // Added null check
-    myRunAction->setRmin(min);
-  }
+  myRunAction->setRmin(min);
 }
-
 void DetectorConstruction::SetMax(G4double max)
 {
   Rmax = max;
   RunAction *myRunAction = (RunAction *)(G4RunManager::GetRunManager()->GetUserRunAction());
-  if (myRunAction) { // Added null check
-    myRunAction->setRmax(max);
-  }
+  myRunAction->setRmax(max);
 }
-
 void DetectorConstruction::SetNrings(G4int N)
 {
   Nrings = N;
   RunAction *myRunAction = (RunAction *)(G4RunManager::GetRunManager()->GetUserRunAction());
-  if (myRunAction) { // Added null check
-    myRunAction->setNrings(Nrings);
-  }
+  myRunAction->setNrings(Nrings);
 }
-
 void DetectorConstruction::SetNperRing(G4int N)
 {
   NperRing = N;
   RunAction *myRunAction = (RunAction *)(G4RunManager::GetRunManager()->GetUserRunAction());
   myRunAction->setNperRing(NperRing);
 }
-
 void DetectorConstruction::SetCells(G4double min, G4double max, G4int Nrings)
 {
   R.resize(Nrings);
