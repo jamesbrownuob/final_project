@@ -83,12 +83,11 @@ void EventAction::BeginOfEventAction(const G4Event *)
         tracks.erase(tracks.begin());
     }
 
-    parentParticle.insert(std::pair<G4int, G4int>(1, 0)); // track 1 is always actinium225
+    parentParticle.insert(std::pair<G4int, G4int>(1, 0)); // track 1 is always radium224
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void EventAction::EndOfEventAction(const G4Event *)
 {
-    // Code for the end of an event
 }
