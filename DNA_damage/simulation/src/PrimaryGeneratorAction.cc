@@ -85,7 +85,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event *anEvent)
 
     ps_file.seekg(eventNum*12*8, ps_file.beg); // find position of event data. 12 doubles which are each 8 bytes
 
-    double line[12];
+    double line[15];
 
     ps_file.read((char *)&line, sizeof line);
 
@@ -102,6 +102,9 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event *anEvent)
     part1_CopyNum = line[9];
     part1_Time = line[10];
     part1_particleSource = line[11];
+    position_x = line[12];
+    position_y = line[13]; 
+    position_z = line[14];
 
     G4ParticleTable *particleTable = G4ParticleTable::GetParticleTable();
     G4ParticleDefinition *particle;
