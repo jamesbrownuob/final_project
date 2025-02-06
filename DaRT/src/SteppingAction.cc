@@ -634,9 +634,9 @@ void SteppingAction::savePoint(const G4Track *track, const G4ThreeVector &newPos
   output[9] = copy;
   output[10] = time / s;
   output[11] = originParticle;
-  output[12] = ring.x()
-  output[13] = ring.y()
-  output[14] = ring.z()
+  output[12] = ring.x();
+  output[13] = ring.y();
+  output[14] = ring.z();
 
   PSfile.write((char *)&output, sizeof(output));
   fpEventAction->tracks.push_back(track->GetTrackID());
