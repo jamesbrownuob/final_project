@@ -370,7 +370,7 @@ void SteppingAction::UserSteppingAction(const G4Step *step)
 
         // calculate time at point where crossing occurs
         G4double newTime = step->GetPreStepPoint()->GetGlobalTime() + (step->GetDeltaTime() * percentageOfStep);
-
+        G4ThreeVector worldPos = step->GetPostStepPoint()->GetPosition();
         savePoint(step->GetTrack(), newPos, boxMomentumPre, step->GetPreStepPoint()->GetPhysicalVolume()->GetCopyNo(), newKE, newTime, fpEventAction->parentParticle[TrackID], worldPos);
 
         G4double percentageAccountedFor = percentageOfStep;
@@ -494,6 +494,7 @@ void SteppingAction::UserSteppingAction(const G4Step *step)
       G4ThreeVector boxMomentumPost = transformDirection(step->GetPostStepPoint()->GetPosition(), step->GetPostStepPoint()->GetMomentumDirection()); // particle momentum in box frame for next step
 
       // step is contained within box save end point as start of next step
+      G4ThreeVector worldPos = step->GetPostStepPoint()->GetPosition();
       savePoint(step->GetTrack(), preStepBox + delta, boxMomentumPost, step->GetPreStepPoint()->GetPhysicalVolume()->GetCopyNo(), step->GetPreStepPoint()->GetKineticEnergy(), step->GetPreStepPoint()->GetGlobalTime(), fpEventAction->parentParticle[TrackID], worldPos);
     }
     else
@@ -521,7 +522,7 @@ void SteppingAction::UserSteppingAction(const G4Step *step)
 
       // calculate time at point where crossing occurs
       G4double newTime = step->GetPreStepPoint()->GetGlobalTime() + (step->GetDeltaTime() * percentageOfStep);
-
+      G4ThreeVector worldPos = step->GetPostStepPoint()->GetPosition();
       savePoint(step->GetTrack(), newPos, boxMomentumPre, step->GetPreStepPoint()->GetPhysicalVolume()->GetCopyNo(), newKE, newTime, fpEventAction->parentParticle[TrackID], worldPos);
 
       G4double percentageAccountedFor = percentageOfStep;
